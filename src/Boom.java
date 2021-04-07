@@ -1,5 +1,8 @@
 public class Boom {
 
+    static {
+        System.out.println("hello");
+    }
         public static void main(String[] args) {
             char[][] arr = {
                     {'*', '.', '.', '.'},
@@ -8,12 +11,14 @@ public class Boom {
                     {'*', '.', '.', '.'}
             };
             char[][] newArr = mineSweeper(arr);
-            for (int i = 0; i < newArr.length; i++) {
-                for (int j = 0; j < newArr[i].length; j++) {
-                    System.out.print(newArr[i][j] + " ");
-                }
-                System.out.println();
-            }
+//            for (int i = 0; i < newArr.length; i++) {
+//                for (int j = 0; j < newArr[i].length; j++) {
+//                    System.out.print(newArr[i][j] + " ");
+//                }
+//                System.out.println();
+//            }
+            System.out.println("hihi");
+
         }
 
 
@@ -43,5 +48,6 @@ public class Boom {
             }
             return newArr;
         }
-    }
+
+}
 
